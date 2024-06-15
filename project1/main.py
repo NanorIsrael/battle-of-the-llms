@@ -1,5 +1,5 @@
 from langchain_core.prompts import PromptTemplate
-from langchain_community.llms import HuggingFaceHub
+# from langchain_community.llms import HuggingFaceHub
 from langchain.chains import LLMChain
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain import HuggingFaceHub
@@ -16,7 +16,10 @@ hf_hub = HuggingFaceHub(
 )
 
 # Define a simple prompt template
-prompt = PromptTemplate(input_variables=["question"], template="Question: {question}\nAnswer:")
+prompt = PromptTemplate(
+	input_variables=["question"],
+	template="Question: {question}\nAnswer:"
+)
 
 # Create an LLMChain with the Hugging Face model
 llm_chain = LLMChain(prompt=prompt, llm=hf_hub)
