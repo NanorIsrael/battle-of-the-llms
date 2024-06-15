@@ -1,0 +1,9 @@
+huggingface_hub
+transformers
+accelerate
+bitsandbytes
+langchain
+openai
+langchain_openai
+langchain_community
+langchain-huggingface
