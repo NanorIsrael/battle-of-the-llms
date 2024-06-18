@@ -5,9 +5,12 @@ from langchain_huggingface import HuggingFaceEndpoint
 from langchain import HuggingFaceHub
 from langchain_openai import ChatOpenAI
 from langchain_huggingface import ChatHuggingFace
+from dotenv import load_dotenv
+
 import os
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"]
+load_dotenv()
+print(os.environ["HUGGINGFACEHUB_API_TOKEN"])
 model = "google/flan-t5-base"
 
 # Initialize HuggingFaceHub with your API token

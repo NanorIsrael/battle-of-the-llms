@@ -7,3 +7,7 @@ openai
 langchain_openai
 langchain_community
 langchain-huggingface
+python-dotenv
+PyPDF2
+setuptools
+pandas
