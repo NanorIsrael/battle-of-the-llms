@@ -11,3 +11,6 @@ python-dotenv
 PyPDF2
 setuptools
 pandas
+pinecone-client
+tiktoken
+chromadb
