@@ -28,7 +28,7 @@ prompt = PromptTemplate(
 llm_chain = LLMChain(prompt=prompt, llm=hf_hub)
 
 # Invoke the model with a question
-question = "How many countries are in Africa?"
+question = "what is 1 + 1?"
 response = llm_chain.run({"question": question})
 
 print(response)

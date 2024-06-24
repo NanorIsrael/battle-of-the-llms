@@ -15,3 +15,5 @@ pinecone-client
 tiktoken
 chromadb
 llama-cpp-python
+einops
+torch
