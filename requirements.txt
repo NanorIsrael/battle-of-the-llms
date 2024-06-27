@@ -17,3 +17,5 @@ chromadb
 llama-cpp-python
 einops
 torch
+google.generativeai
+streamlit
